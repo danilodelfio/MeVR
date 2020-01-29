@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     // Fill the entire surface
     width: 600,
     height: 400,
-    backgroundColor: 'rgba(156, 156, 255, 0)',
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
     justifyContent: 'center',
     alignItems: 'center',
   },

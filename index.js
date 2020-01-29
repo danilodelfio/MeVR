@@ -8,7 +8,7 @@ import {
   Image
 } from 'react-360';
 
-import PersonalInfo from './PersonalInfoView'
+import PersonalInfo from './src/components/PersonalInfoView'
 
 
 export default class MeetVR extends React.Component {

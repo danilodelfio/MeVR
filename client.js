@@ -37,7 +37,7 @@ function init(bundle, parent, options = {}) {
   // );
 
   // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('360_world.jpg'));
+  r360.compositor.setBackground(r360.getAssetURL('milano-piazza.jpg'));
   // const player = r360.compositor.createVideoPlayer(VIDEO_PLAYER);
   // player.setLoop(true);
   // player.setVolume(1);
