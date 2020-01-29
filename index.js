@@ -16,8 +16,8 @@ export default class MeetVR extends React.Component {
   render() {
     return (
       <View style={styles.panel}>
+        <Image source={{uri: asset('headLinkedin.jpeg').uri}} style={{width:1024, height:256}} />
         <View style={styles.greetingBox}>
-          <Image source={{uri: asset('headLinkedin.jpeg').uri}} />
           <Text style={styles.greeting}>
             Welcome to React 360
           </Text>
@@ -34,11 +34,12 @@ const styles = StyleSheet.create({
     height: 600,
     backgroundColor: 'rgba(255, 255, 255, 0.4)',
     justifyContent: 'center',
+    top:0,
     alignItems: 'center',
   },
   greetingBox: {
     padding: 20,
-    backgroundColor: '#000000',
+    backgroundColor: '#00000000',
     borderColor: '#639dda',
     borderWidth: 2,
   },

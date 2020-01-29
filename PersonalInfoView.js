@@ -12,7 +12,7 @@ class PersonalInfoView extends React.Component {
   render() {
     return (
       <View style={styles.greetingBox}>
-        <Image source={{uri: asset('me.jpeg').uri}} />
+        <Image source={{uri: asset('me.jpeg').uri}} style={{width:200, height:200}} />
         <Text style={styles.greeting}>
         Team Leading, Software Architect, Java, Spring Boot, Node.js, Angular, writer, design thinking.
         </Text>
@@ -34,13 +34,13 @@ const styles = StyleSheet.create({
     // Fill the entire surface
     width: 600,
     height: 400,
-    backgroundColor: 'rgba(156, 156, 255, 0.4)',
+    backgroundColor: 'rgba(156, 156, 255, 0)',
     justifyContent: 'center',
     alignItems: 'center',
   },
   greetingBox: {
     padding: 20,
-    backgroundColor: '#000000'
+    backgroundColor: '#00000000'
   },
   greeting: {
     fontSize: 30,
