@@ -1,4 +1,6 @@
 import { ReactInstance, Location, Surface } from 'react-360-web';
+import WebVRPolyfill from 'webvr-polyfill';
+const polyfill = new WebVRPolyfill();
 
 function init(bundle, parent, options = {}) {
   const r360 = new ReactInstance(bundle, parent, {
@@ -26,9 +28,9 @@ function init(bundle, parent, options = {}) {
   );
 
   r360.renderToSurface(
-    r360.createRoot('PersonalInfo'),
+    r360.createRoot('PostIt'),
     flatLeftSurface,
-    'personalInfo' /* optional, a name to reference the surface */
+    'PostIt' /* optional, a name to reference the surface */
   );
 
   // r360.renderToLocation(
@@ -37,7 +39,7 @@ function init(bundle, parent, options = {}) {
   // );
 
   // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('milano-piazza.jpg'));
+  r360.compositor.setBackground(r360.getAssetURL('mountain360.jpg'));
   // const player = r360.compositor.createVideoPlayer(VIDEO_PLAYER);
   // player.setLoop(true);
   // player.setVolume(1);

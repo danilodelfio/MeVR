@@ -9,6 +9,7 @@ import {
 } from 'react-360';
 
 import PersonalInfo from './src/components/PersonalInfoView'
+import PostIt from './src/components/PostIt'
 
 
 export default class MeetVR extends React.Component {
@@ -39,14 +40,14 @@ const styles = StyleSheet.create({
   },
   greetingBox: {
     padding: 20,
-    backgroundColor: '#00000000',
-    borderColor: '#639dda',
-    borderWidth: 2,
+    backgroundColor: '#00000000'
   },
   greeting: {
     fontSize: 30,
+    marginTop:20
   },
 });
 
 AppRegistry.registerComponent('MeetVR', () => MeetVR);
 AppRegistry.registerComponent('PersonalInfo', () => PersonalInfo);
+AppRegistry.registerComponent('PostIt', () => PostIt);
