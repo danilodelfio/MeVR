@@ -1,6 +1,6 @@
 import { ReactInstance, Location, Surface } from 'react-360-web';
-// import WebVRPolyfill from 'webvr-polyfill';
-// const polyfill = new WebVRPolyfill();
+import WebVRPolyfill from 'webvr-polyfill';
+const polyfill = new WebVRPolyfill();
 
 // polyfill.getVRDisplays().then(displays => {
 //   console.log(displays.length);
