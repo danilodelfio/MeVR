@@ -7,6 +7,7 @@ import {
   asset,
   Image
 } from 'react-360';
+import GazeButton from "react-360-gaze-button";
 
 import PersonalInfo from './src/components/PersonalInfoView'
 import PostIt from './src/components/PostIt'

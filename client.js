@@ -1,20 +1,7 @@
 import { ReactInstance, Location, Surface } from 'react-360-web';
+import SimpleRaycaster from "simple-raycaster";
 import WebVRPolyfill from 'webvr-polyfill';
 const polyfill = new WebVRPolyfill();
-
-// polyfill.getVRDisplays().then(displays => {
-//   console.log(displays.length);
-//   if (displays.length) {
-//     vrDisplay = displays[0];
-//     controls = new THREE.VRControls(camera);
-//     vrDisplay.requestAnimationFrame(animate);
-//   } else {
-//     // If we don't have a VRDisplay, we're probably on
-//     // a desktop environment, so set up desktop-oriented controls
-//     controls = new THREE.OrbitControls(camera);
-//     requestAnimationFrame(animate);
-//   }
-// });
 
 function init(bundle, parent, options = {}) {
   const r360 = new ReactInstance(bundle, parent, {
@@ -63,6 +50,8 @@ function init(bundle, parent, options = {}) {
   
   
   // r360.compositor.setBackgroundVideo(VIDEO_PLAYER);
+  r360.controls.clearRaycasters();
+  r360.controls.addRaycaster(SimpleRaycaster);
 }
 
 window.React360 = {init};
